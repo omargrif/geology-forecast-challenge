@@ -1,0 +1,18 @@
+# Packages actually validated locally against advanced_conv_attention_forecast.ipynb
+# and baseline_trend_forecast.ipynb on 2026-08-28.
+#
+# Install into the working interpreter directly (creating a .venv on this
+# machine hits a Windows Application Control block on the copied python.exe):
+#
+#   uv pip install --python "C:\Users\omarg\AppData\Roaming\uv\python\cpython-3.12.13-windows-x86_64-none\python.exe" --break-system-packages -r requirements.txt
+#
+# scikit-learn is deliberately NOT listed: one of its compiled dependencies
+# (scipy's _rigid_transform_cy) is blocked by the same policy, and the
+# notebook no longer needs it (GroupKFold was replaced with a hand-written
+# group_k_fold() in advanced_conv_attention_forecast.ipynb).
+
+pandas==3.0.5
+numpy==2.5.2
+tensorflow==2.21.0
+matplotlib==3.11.1
+ipykernel==7.3.0

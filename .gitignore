@@ -1,0 +1,20 @@
+# Kaggle competition data - not redistributed (download separately from Kaggle)
+data/*.csv
+data/train_raw/
+
+# Generated submissions / large derived data
+*.csv
+
+# Claude Code local tool state
+.claude/
+
+# Environment
+.env
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
